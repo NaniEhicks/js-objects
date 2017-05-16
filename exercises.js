@@ -93,11 +93,19 @@ console.log(stockCar);
    the value at `name`, and just the value at `age`.
  */
 var plainPerson = {};
+
 function buildPerson(person, nameString, age){
-   var name = buildPerson(1);
-
-
+person.name = nameString;
+person.age = age;
+return person;
 }
+
+var complete = buildPerson(plainPerson, "Nani", 26);
+
+
+console.log(complete);
+
+
 
 /*
    Display values of objects that are inside an array
@@ -175,7 +183,7 @@ var arrayOfObjects = [
     date: "Monday Feb 14 2015 7:18 PM",
     total: "194.33"
   }
-]
+];
 
 function printProcessedOrders(orders){
   console.log(orders);
@@ -194,8 +202,7 @@ printProcessedOrders(arrayOfObjects);
         Invoke your function and pass in your object, store the result to a variable named sumObjResult and use `console.log` 
         to inspect your results.
 */
-
-
+var sumObj
 /*
    Print sum function and add as new key-value
    Declare a new function named printObj and a single parameter which will be the object from the challenge just above. 
